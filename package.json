@@ -4,7 +4,9 @@
   "description": "#100daysofcode bot",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "#100daysofcode",
@@ -29,7 +31,8 @@
     "level": "^1.6.0",
     "twit": "2.2.5",
     "unique-random-array": "1.0.0",
-    "unirest": "0.5.1"
+    "unirest": "0.5.1",
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
@@ -38,5 +41,6 @@
   "homepage": "https://github.com/freeCodeCamp/100DaysOfCode",
   "devDependencies": {
     "standard": "^8.6.0"
-  }
+  },
+  "snyk": true
 }
